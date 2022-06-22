@@ -1,20 +1,9 @@
 #include<iostream>
 #include"User.h"
 #include"QueuePriority.h"
+#include"Queue.h"
 using namespace std;
-/*
-Разработать приложение, имитирующее очередь печати принтера. 
-Должны быть клиенты, посылающие запросы на принтер, у каждого из которых есть свой приоритет. 
-Каждый новый клиент попадает в очередь в зависимости от своего приоритета. 
-Необходимо сохранять статистику печати (пользователь, время) в отдельной очереди. 
-Предусмотреть вывод статистики на экран
 
-to do:
-очередь с приоритетом 
-класс пользователь : имя, приоритет
-класс принтер
-
-*/
 
 
 
@@ -30,7 +19,7 @@ int main()
 	User u08(8, 1);
 	User u09(9, 1);
 	User u10(10, 5);
-
+	Queue qt(20);
 	QueuePriority q(20);
 	q.Add(u01);
 	q.Add(u02);
@@ -44,6 +33,13 @@ int main()
 	q.Add(u10);
 
 	q.Show();
-	while (!q.IsEmpty()) { std::cout << q.Extract() << "  "; };
+	while (!q.IsEmpty()) {
+		int temp = q.Extract();
+		qt.Add(temp);
+		cout << temp << "  "; 
+	};
+	cout << endl << endl;
+	qt.Show();
+
 	return 0;
 };
