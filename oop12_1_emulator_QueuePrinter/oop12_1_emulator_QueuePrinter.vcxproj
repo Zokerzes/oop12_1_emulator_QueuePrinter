@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Printer.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="QueuePriority.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Printer.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="QueuePriority.h" />
     <ClInclude Include="User.h" />

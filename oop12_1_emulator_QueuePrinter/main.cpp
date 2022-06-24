@@ -4,9 +4,6 @@
 #include"Queue.h"
 using namespace std;
 
-
-
-
 int main()
 {
 	User u01(1, 4);
