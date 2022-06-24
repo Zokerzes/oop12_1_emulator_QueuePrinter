@@ -16,6 +16,7 @@ class QueuePriority
 	int QueueLength;
 
 public:
+	QueuePriority() {};
 	//Конструктор
 	QueuePriority(int m);
 	//Деструктор

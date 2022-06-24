@@ -12,6 +12,7 @@ class Queue
 	//Текущий размер очереди
 	int QueueLength;
 public:
+	Queue() {};
 	//Конструктор
 	Queue(int m);
 	//Деструктор
