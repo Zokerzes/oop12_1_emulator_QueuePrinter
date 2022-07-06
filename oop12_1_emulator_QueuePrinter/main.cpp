@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	/*User u01(1, 4);
+	User u01(1, 4);
 	User u02(2, 3);
 	User u03(3, 4);
 	User u04(4, 3);
@@ -28,16 +28,20 @@ int main()
 	q.Add(u07);
 	q.Add(u08);
 	q.Add(u09);
-	q.Add(u10);*/
-	Printer p;
-	/*q.Show();
+	q.Add(u10);
+	/*Printer p;
+	p.job();
+	p.getQueue().Show();
+	p.toPause();
+	p.Show();*/
+	q.Show();
 	while (!q.IsEmpty()) {
 		int temp = q.Extract();
 		qt.Add(temp);
 		cout << temp << "  "; 
 	};
 	cout << endl << endl;
-	qt.Show();*/
+	qt.Show();
 
 	return 0;
 };

@@ -6,15 +6,19 @@
 #include"QueuePriority.h"
 #include"Queue.h"
 class Printer
-{
+{public:
+	int temp{ int() };
 	Queue qt;
 	QueuePriority q;
 
-public:
+
 
 	Printer();
 	void job();
-	void Show(); //not worked!! 
+	void toPause() {};
+	void Show(); 
+	Queue getQueue();
+	
 
 };
 

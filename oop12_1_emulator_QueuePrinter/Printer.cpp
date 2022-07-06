@@ -26,13 +26,14 @@ Printer::Printer()
 	q.Add(u09);
 	q.Add(u10);
 	q.Show();
-
+	
 }
 
 void Printer::job()
 {
-	int temp{int()};
+	
 	while (!q.IsEmpty()) {
+		cout << q.IsEmpty();
 		temp = q.Extract();
 		qt.Add(temp);
 		cout << temp << "  ";
@@ -42,7 +43,12 @@ void Printer::job()
 void Printer::Show()
 {
 	while (!qt.IsEmpty()) {
-		int temp = qt.Show()
-		cout << temp << "  ";
+		//int temp = qt.Show()
+		qt.Show();
 	};
+}
+
+Queue Printer::getQueue()
+{
+	return qt;
 }
